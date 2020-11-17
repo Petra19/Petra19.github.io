@@ -1,0 +1,209 @@
+/* CSS Document */
+@import "header.css";
+@import "navbar.css";
+@import "footer.css";
+
+body{
+	font-family: "Amatic SC", "Roboto","Helvetica", "Arial", "sans-serif",;
+}
+h1, h2, h3{
+    color: rgba(117,65,180,1.00);
+}
+.logo {
+    padding-left: 15px;
+	font-family: "Amatic SC";
+    color: #7541B4;
+    font-weight: 700;
+	font-size: 3.0em;
+    text-align: left;
+	text-decoration: none;
+}
+.title {
+	padding-left: 20px; 
+	padding-top: 30px;
+}
+.linkStyle {
+    text-decoration: none;
+    color: #7541B4;
+    line-height: 1.5em;
+}
+.contact-icon {
+	color: #7541B4;
+	margin: 5px;
+}
+.button {
+    color: #7541B4;
+    background-color: #DAD7DE;
+	margin-top:10px;
+	padding: 5px 10px;
+	font-size: 1.4em;
+	}
+
+@media only screen and (max-width : 440px ){
+.container {
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 150px 30px auto auto auto auto 50px;
+    grid-template-areas: 
+		"hd"
+		"nav"
+		"main"
+		"sd"
+		"ft";
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size:1.1em;
+	line-height: 1.7em;
+	}
+
+.side{
+	grid-area:sd;
+	margin: 20px 10px;
+	text-align: center;
+	padding-top: 50px;
+}
+.content{
+	grid-area:main;	
+}
+
+.nestedPosts {
+	display:grid;
+	grid-template-columns: 1 f ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"ps1"
+		"ps2"
+		"ps3"
+		"ps4";
+	grid-gap: 10px;	
+	padding: 10px;
+}
+.post {
+    margin: 5px;
+    padding: 10%;
+    background-color: rgba(218,215,222,1.00);
+}
+#post1 {
+	grid-area: ps1;
+}
+#post2 {
+	grid-area: ps2;
+}
+#post3 {
+	grid-area: ps3;	
+}
+#post4 {
+	grid-area: ps4;
+}
+}
+@media only screen and (min-width : 441px ) and ( max-width : 767px ){
+.container {
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 150px 30px auto auto 50px;
+    grid-template-areas: 
+		"hd"
+		"nav"
+		"main"
+		"sd"
+		"ft";
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size:1.2em;
+	line-height: 1.8em;
+	}
+.side{
+	grid-area:sd;
+	margin: 20px 10px;
+	text-align: center;
+	padding-top: 50px;
+}
+.content{
+	grid-area:main;	
+}
+
+.nestedPosts {
+	display:grid;
+	grid-template-columns: 1 f 1 fr 1 fr 1 fr;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: 
+		"ps1 ps1 ps2 ps2"
+		"ps3 ps3 ps4 ps4";
+	grid-gap: 10px;	
+	padding: 10px;
+}
+.post {
+    margin: 5px;
+    padding: 10%;
+    background-color: #DAD7DE;
+}
+#post1 {
+	grid-area: ps1;
+}
+#post2 {
+	grid-area: ps2;
+}
+#post3 {
+	grid-area: ps3;	
+}
+#post4 {
+	grid-area: ps4;
+}
+}
+@media only screen and (min-width:768px){
+.container{
+    display: grid;
+	grid-template-columns: 20% 40% 40%;
+	grid-template-rows: 150px 30px auto 50px;
+	grid-template-areas:
+		"hd hd hd"
+		"nav nav nav"
+		"sd main main"
+		"ft ft ft";	
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size:1.2em;
+	line-height: 1.8em;
+}	
+.nestedPosts {
+    padding: 10px;
+    margin-top: 10px;
+	}
+.side{
+	text-align: left;
+	margin-left: 20px;
+	margin-right:5px;
+	padding-top: 50px;
+	}
+.content{
+	grid-area:main;	
+}
+
+.nestedPosts {
+	display:grid;
+	grid-template-columns: 1 f 1 fr 1 fr 1 fr;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: 
+		"ps1 ps1 ps2 ps2"
+		"ps3 ps3 ps4 ps4";
+	grid-gap: 10px;	
+	padding: 10px;
+}
+.post {
+    margin: 5px;
+    padding: 10%;
+    background-color: #DAD7DE;
+}
+#post1 {
+	grid-area: ps1;
+}
+#post2 {
+	grid-area: ps2;
+}
+#post3 {
+	grid-area: ps3;	
+}
+#post4 {
+	grid-area: ps4;
+}
+}

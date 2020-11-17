@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+.navbar {
+	width: 100%;
+	grid-area:nav;
+	background-color:#DAD7DE;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.navbar a {
+	text-decoration: none;
+	margin-top: 3px;
+	padding: 5px;
+	color: #7541B4;
+}
+
+.navbar a:hover {
+	background-color: #7541B4;
+	color: #DAD7DE;
+	height: 60px;	
+}
+.nav-link {
+	list-style: none;
+	display:flex;
+}
+

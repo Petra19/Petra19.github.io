@@ -1,0 +1,121 @@
+/* CSS Document */
+body{
+	font-family: "Amatic SC", "Roboto","Helvetica", "Arial", "sans-serif",;	
+}
+h1,h2, h3{
+	color: #7541B4;
+}
+.container {
+	padding: 20px;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size:1.1em;
+	line-height: 1.7em;
+}
+.header{
+    background-image: url(../images/lavender2.jpg);
+	height: 100px;
+    padding-top: 30px;
+	padding-left: 30px; 
+}
+.logo {
+	font-family: "Amatic SC";
+    color: #7541B4;
+    font-weight: 700;
+    font-size: 3.0em;
+	text-decoration:none;
+}
+#profilePhoto {
+    border: 2px solid #B1AEAE;
+    border-radius: 100px;
+    margin: 20px; 
+}
+#profileInfo {
+    display: inline-block;
+    margin-left: 30px;
+    position: absolute;
+}
+.linkStyle {
+    text-decoration: none;
+    color: #7541B4;   
+}
+.contact{
+	text-align: center;
+}
+.contact-icon {
+    color: #7541B4;
+    margin: 10px;
+    left: auto;
+    right: auto;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.archive {
+	background-color:#DAD7DE;
+	display: flex;
+	height: 250px;
+	justify-content:space-around;
+	align-items: center;
+}
+.yr1 {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	text-align: center;		
+}
+.yr2 {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	text-align: center;	
+}
+.yr3 {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	text-align: center;	
+}
+.yr4 {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	text-align: center;
+}
+.yr5 {
+	width: 100px;
+	height: 80px;
+	background-color: white;
+	text-align: center;
+}
+.footer{
+    background-color: #DAD7DE;
+    padding: 10px;
+}
+
+@media (max-width:440px){
+	h1,h2,h3 {
+		text-align:center;
+	}
+	#profilePhoto {
+		position: relative;
+		margin-left:65px;
+	}
+	#profileInfo {
+    	position: relative;
+    	float: left;
+	}
+	article {
+		clear:both;
+		padding-top: 20px;
+	}
+	.archive {
+		background-color:#DAD7DE;
+		display: flex;
+		flex-wrap:wrap;
+		height: 250px;
+		justify-content:flex-start;
+		align-items: center;
+}
+}

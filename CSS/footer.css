@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* CSS Document */
+.footer{
+    grid-area: ft;
+    background-color: #DAD7DE;
+    padding: 10px;
+}
